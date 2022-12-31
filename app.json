@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "webshop-koffers",
+    "slug": "webshop-koffers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./img/5.png",
+    "userInterfaceStyle": "light",
+
+    "splash": {
+      "image": "./img/3.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#54ACCF"
+    },
+
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./img/5.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./img/5.png"
+    }
+  }
+}
