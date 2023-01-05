@@ -7,7 +7,6 @@ import {
   Image,
   Pressable,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 
 const PayedScreen = ({ navigation, route }) => {

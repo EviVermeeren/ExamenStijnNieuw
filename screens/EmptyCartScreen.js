@@ -8,10 +8,9 @@ import {
   Pressable,
   TouchableOpacity,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 
-const EmptyCartScreen = ({ navigation, route }) => {
+const EmptyCartScreen = ({ navigation }) => {
   const [suitcases, setSuitcases] = useState([]);
 
   const getSuitcases = async () => {
@@ -57,6 +56,7 @@ const EmptyCartScreen = ({ navigation, route }) => {
   return (
     <View style={styles.screen}>
       <Text style={styles.titles}>Uw mandje is leeg!</Text>
+      <Image style={styles.gif} source={require("../img/giphy.gif")} />
       <Pressable
         style={styles.boeton}
         onPress={() => navigation.navigate("EviNite koffers")}
@@ -192,6 +192,13 @@ const styles = StyleSheet.create({
     marginLeft: "5%",
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
+  },
+
+  gif: {
+    width: "40%",
+    height: 100,
+    marginLeft: "30%",
+    marginBottom: 20,
   },
 
   box: {
