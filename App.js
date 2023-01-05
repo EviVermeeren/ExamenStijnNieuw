@@ -15,6 +15,7 @@ import EmptyCartScreen from "./screens/EmptyCartScreen";
 import PayScreen from "./screens/PayScreen";
 import PayedScreen from "./screens/PayedScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
+import ShippingScreen from "./screens/ShippingScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -54,11 +55,13 @@ export default function App() {
           component={WelcomeScreen}
           options={{ headerShown: false }}
         />
+
         <Stack.Screen
           name="EviNite koffers"
           component={AllSuitcasesScreen}
           options={{ headerShown: false }}
         />
+
         <Stack.Screen
           name="Meer informatie"
           component={DetailScreen}
@@ -90,6 +93,19 @@ export default function App() {
           component={EmptyCartScreen}
           options={{
             title: "Winkelkarretje",
+            headerStyle: { backgroundColor: "#297287" },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontFamily: "Petrona",
+            },
+          }}
+        />
+
+        <Stack.Screen
+          name="ShippingScreen"
+          component={ShippingScreen}
+          options={{
+            title: "Verzendgegevens",
             headerStyle: { backgroundColor: "#297287" },
             headerTintColor: "#fff",
             headerTitleStyle: {

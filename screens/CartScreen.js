@@ -87,7 +87,11 @@ const CartScreen = ({ navigation, route }) => {
           <Pressable
             style={styles.boeton3}
             onPress={() =>
-              navigation.navigate("Betalen", { purch: route.params.title })
+              navigation.navigate("ShippingScreen", {
+                title: route.params.title,
+                uri: route.params.uri,
+                desc: route.params.desc,
+              })
             }
           >
             <Text style={styles.boetonText2}>
