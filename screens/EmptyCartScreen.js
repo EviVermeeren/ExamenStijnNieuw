@@ -30,21 +30,6 @@ const EmptyCartScreen = ({ navigation }) => {
     getSuitcases();
   }, []);
 
-  const [counter, setCounter] = useState(1);
-
-  const increase = () => {
-    setCounter((currentCounter) => currentCounter + 1);
-  };
-
-  const decrease = () => {
-    if (counter > 1) {
-      setCounter((currentCounter) => currentCounter - 1);
-    }
-    if (counter == 0) {
-      counter + 0;
-    }
-  };
-
   const [fontsLoaded] = useFonts({
     Petrona: require("../img/petron.ttf"),
   });
@@ -158,10 +143,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     padding: 15,
     marginTop: 20,
-  },
-
-  extra: {
-    flex: 1,
   },
 
   seeProduct: {

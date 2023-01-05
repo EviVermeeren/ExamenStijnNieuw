@@ -1,15 +1,12 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import {
   Animated,
   StyleSheet,
   Text,
   View,
-  FlatList,
   Image,
   Pressable,
-  TouchableOpacity,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 
@@ -102,13 +99,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#3496B1",
     padding: 25,
     fontFamily: "Petrona",
-  },
-
-  images: {
-    width: 100,
-    height: 100,
-    marginTop: 280,
-    marginLeft: 280,
   },
 
   linearGradient2: {

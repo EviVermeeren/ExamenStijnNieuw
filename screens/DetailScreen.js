@@ -140,14 +140,6 @@ const styles = StyleSheet.create({
     marginTop: 25,
   },
 
-  list: {
-    marginTop: 100,
-  },
-
-  help: {
-    marginTop: 100,
-  },
-
   text: {
     fontSize: 12,
     lineHeight: 21,

@@ -81,10 +81,6 @@ const styles = StyleSheet.create({
     fontFamily: "Comforta",
   },
 
-  list: {
-    marginTop: 50,
-  },
-
   shoppingcart: {
     marginRight: 5,
     marginTop: 15,
@@ -120,4 +116,5 @@ const styles = StyleSheet.create({
     fontFamily: "Petrona",
   },
 });
+
 export default AllSuitcasesScreen;

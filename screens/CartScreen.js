@@ -1,13 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  FlatList,
-  Image,
-  Pressable,
-} from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import { useFonts } from "expo-font";
 
 const CartScreen = ({ navigation, route }) => {
@@ -116,10 +108,6 @@ const styles = StyleSheet.create({
     marginLeft: 135,
     marginTop: 35,
     fontFamily: "Comforta",
-  },
-
-  list: {
-    marginTop: 100,
   },
 
   flex: {

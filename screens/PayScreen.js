@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, Text, View, Pressable, Image } from "react-native";
 import { useFonts } from "expo-font";
 
@@ -114,26 +114,6 @@ const styles = StyleSheet.create({
     marginTop: -10,
   },
 
-  adress: {
-    fontSize: 14,
-    marginTop: 15,
-    color: "#143B45",
-    textAlign: "left",
-    fontFamily: "Comforta",
-  },
-
-  input: {
-    marginTop: 10,
-    marginBottom: 25,
-    padding: 10,
-    borderWidth: 1,
-    borderColor: "#297287",
-    borderRadius: 15,
-    paddingLeft: 15,
-    backgroundColor: "white",
-    fontFamily: "Comforta",
-  },
-
   boeton: {
     alignItems: "center",
     justifyContent: "center",
@@ -183,17 +163,6 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     color: "#143B45",
     fontFamily: "Comforta",
-  },
-
-  boeton3: {
-    alignItems: "center",
-    justifyContent: "center",
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: "#297287",
-    width: "100%",
   },
 
   boetonText: {

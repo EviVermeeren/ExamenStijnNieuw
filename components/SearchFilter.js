@@ -206,12 +206,6 @@ const styles = StyleSheet.create({
     fontFamily: "Comforta",
   },
 
-  eigenschappenDetail: {
-    color: "#143B45",
-    fontSize: 12,
-    paddingLeft: 5,
-  },
-
   title: {
     fontSize: 20,
     paddingLeft: 5,
